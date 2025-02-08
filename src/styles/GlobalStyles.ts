@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+    
     * {
         padding: 0;
         margin: 0;
@@ -47,5 +48,11 @@ export const GlobalStyles = createGlobalStyle`
     a svg {
         display: block;
     }
-
+    @media (prefers-color-scheme: light) {
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: black;
+            width: 100%;
+        }
+    }
 `;

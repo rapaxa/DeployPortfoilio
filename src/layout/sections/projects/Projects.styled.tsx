@@ -9,6 +9,7 @@ export const Card = styled.div`
     margin: 1.25rem; // 20px -> 1.25rem
     overflow: hidden;
     text-overflow: ellipsis;
+   
 `;
 
 export const StyledListItems = styled.ul`
@@ -38,7 +39,10 @@ export const StyledListItem = styled.li`
     margin-bottom: 3.875rem; // 62px -> 3.875rem
     border-radius: 1.25rem; // 20px -> 1.25rem
     position: relative;
-
+    @media (prefers-color-scheme: light) {
+        background-color: #363636;
+        color: #CCCCCC;
+    }
     &::after {
         content: "";
         position: absolute;
@@ -86,6 +90,7 @@ export const StyledLinks = styled.div`
 export const StyledLink = styled.a`
     text-decoration: underline;
     cursor: pointer;
+    color: #FFFFFF;
     margin-left: 1.25rem; // 20px -> 1.25rem
     margin-right: 1.875rem; // 30px -> 1.875rem
    

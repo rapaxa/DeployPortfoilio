@@ -2,7 +2,7 @@ import photo from "../../../assets/images/Photo.webp";
 import {SectionTitles} from "../../../components/sectionItems/SectionTitles.tsx";
 import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
 import {StyledSpan} from "../../../components/StyledSpan.tsx";
-import {Container} from "../../../components/menu/Container.tsx";
+import {Container} from "../../../components/Container.tsx";
 import {Photo, PhotoBorder, Square} from "./Main.styled.ts";
 
 

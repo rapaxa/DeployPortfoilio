@@ -46,6 +46,7 @@ const MenuList = styled.ul`
 const MenuItem = styled.li`
     text-align: center;
     flex-wrap: wrap;
+    
 `;
 
 const MenuLink = styled.a`
@@ -55,8 +56,10 @@ const MenuLink = styled.a`
     font-weight: 500;
     line-height: 1.625rem;
     color: #666666;
-
+    @media (prefers-color-scheme: light) {
+        color:#A7A7A7;
+    }
     &:hover {
-        color: #333333; /* Добавил эффект наведения */
+        color: #333333; 
     }
 `;

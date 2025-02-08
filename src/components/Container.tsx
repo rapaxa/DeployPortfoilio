@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {theme} from "../../styles/theme.ts";
-import {ContainerPropsType} from "../../types/container.ts";
+import {theme} from "../styles/theme.ts";
+import {ContainerPropsType} from "../types/container.ts";
 
 export const Container = styled.div<ContainerPropsType>`
     max-width: 1192px;

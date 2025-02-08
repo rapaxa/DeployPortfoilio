@@ -11,6 +11,9 @@ export const StyledTitle = styled.h3`
         font-size: 2.625rem;
         text-align: center;
     }
+    @media (prefers-color-scheme: light) {
+        color: #CCCCCC;
+    }
     
 
 `
@@ -39,6 +42,10 @@ export const FooterMenu = styled.div`
     display: flex;
     justify-content: space-between;`
 export const FooterText = styled.p`
+    @media (prefers-color-scheme: light) {
+        color: #CCCCCC;
+    }
+    
 `
 
 

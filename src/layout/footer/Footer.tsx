@@ -4,14 +4,14 @@ import {FlexWrapperStyled} from "../../components/FlexWrapper.tsx";
 import {SocialList} from "../../components/menu/SocialList.tsx";
 import {MenuLinks} from "../../components/menu/MenuLinks.tsx";
 import {Icon} from "../../components/icons/Icon.tsx";
-import {Container} from "../../components/menu/Container.tsx";
+import {Container} from "../../components/Container.tsx";
 import {ContactsItems, FooterMenu, FooterText, StyledFooterContactsContainer, StyledTitle} from "./Footer.styled.ts";
 
 export const Footer = () => {
     return (
         <SectionsWrapper as = "footer"  direction="row" >
             <Container direction="column" $justify="space-around">
-                <FlexWrapperStyled>
+                <FlexWrapperStyled $justifyC={"center"}>
                     <StyledTitle>For any questions please mail me:<br/>
                         <StyledSpan>hi@pavanmg.in</StyledSpan>
                     </StyledTitle>
@@ -28,12 +28,10 @@ export const Footer = () => {
                 </StyledFooterContactsContainer>
                 <FooterMenu>
                     <MenuLinks/>
-                    <FooterText>
-                        Designed and built by
-                        <StyledSpan>Pavan</StyledSpan>
-                        MG with
-                        <StyledSpan>Love</StyledSpan> &
-                        <StyledSpan>Coffee</StyledSpan>
+                    <FooterText>Designed and built by
+                        <StyledSpan> Pavan</StyledSpan> MG with
+                        <StyledSpan> Love</StyledSpan> &
+                        <StyledSpan> Coffee</StyledSpan>
                     </FooterText>
                 </FooterMenu>
             </Container>

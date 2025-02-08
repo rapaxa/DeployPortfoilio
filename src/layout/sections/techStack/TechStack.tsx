@@ -2,7 +2,7 @@ import {SectionTitles} from "../../../components/sectionItems/SectionTitles.tsx"
 import {TechStackItems} from "./techStackItems/TechStackItems.tsx";
 import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
 import {SectionSpan} from "../../../components/sectionItems/SectionSpan.tsx";
-import {Container} from "../../../components/menu/Container.tsx";
+import {Container} from "../../../components/Container.tsx";
 import {dataItems} from "./techStackData.ts";
 
 

@@ -4,7 +4,7 @@ import {FlexWrapperStyled} from "../../../components/FlexWrapper.tsx";
 import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
 import {SectionTitles} from "../../../components/sectionItems/SectionTitles.tsx";
 import {SectionText} from "../../../components/sectionItems/SectionText.tsx";
-import {Container} from "../../../components/menu/Container.tsx";
+import {Container} from "../../../components/Container.tsx";
 
 export const InfoAboutMe = () => {
     return (

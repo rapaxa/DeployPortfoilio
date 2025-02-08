@@ -7,5 +7,8 @@ export const FlexWrapperStyled = styled.div<FlexWrapperPropsType>`
     width: 100%;
     justify-content: ${({ $justifyC }) => $justifyC};
     flex-direction: ${({ $flexD }) => $flexD};
-    align-items: ${({ $alignI }) => $alignI};
+    align-items: ${({ $alignI }) => $alignI };
+    @media (prefers-color-scheme: light) {
+        color: #A7A7A7;
+    }
 `;
