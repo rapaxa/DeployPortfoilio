@@ -1,6 +1,8 @@
 import {Icon} from "../icons/Icon.tsx";
 import styled from "styled-components";
-
+type SocialListProps = {
+    display?:string
+}
 export const SocialList = () => {
     return (
         <SocialListStyled>
@@ -25,8 +27,8 @@ export const SocialList = () => {
 }
 
 
-const SocialListStyled = styled.ul`
-    display: flex;
+const SocialListStyled = styled.ul<SocialListProps>`
+    display: ${(props) => props.display || "flex"};
     gap: 1.25rem;
     list-style: none;
     margin: 0;
