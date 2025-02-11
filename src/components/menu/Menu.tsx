@@ -51,7 +51,7 @@ const MenuLink = styled.a`
     font-weight: 500;
     line-height: 1.625rem;
     color: #666666;
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
         color:#A7A7A7;
     }
     &:hover {

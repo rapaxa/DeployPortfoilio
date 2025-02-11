@@ -48,7 +48,7 @@ export const GlobalStyles = createGlobalStyle`
     a svg {
         display: block;
     }
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
         body {
             font-family: 'Poppins', sans-serif;
             background: black;

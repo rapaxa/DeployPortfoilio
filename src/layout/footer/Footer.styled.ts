@@ -11,7 +11,7 @@ export const StyledTitle = styled.h3`
         font-size: 2.625rem;
         text-align: center;
     }
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
         color: #CCCCCC;
     }
     
@@ -22,6 +22,7 @@ export const ContactsItems = styled.ul`
     align-items: center;
     gap: 3.875rem;
     @media ${theme.media.tablet} {
+        display: flex;
         flex-direction: column;
     }
     
@@ -40,9 +41,15 @@ export const StyledFooterContactsContainer = styled.div`
 export const FooterMenu = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-between;`
+    justify-content: space-between;
+    @media ${theme.media.tablet} {
+        display: flex;
+        flex-direction: column;
+    }
+`
+
 export const FooterText = styled.p`
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
         color: #CCCCCC;
     }
     

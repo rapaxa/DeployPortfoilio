@@ -12,7 +12,7 @@ export const SectionTitles = styled.h2`
        @media ${theme.media.tablet} {
        text-align: center;
        }
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
         color: #D9D9D9;
     }
     }
