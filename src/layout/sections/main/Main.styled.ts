@@ -20,6 +20,9 @@ export const PhotoBorder = styled.div`
     align-items: center;
     max-width: 627px;
     max-height: 627px;
+    position: relative;
+    left: -14px;
+    top: 14px;
 `
 
 export const Square = styled.div<SquareProps>`

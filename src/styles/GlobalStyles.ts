@@ -39,20 +39,13 @@ export const GlobalStyles = createGlobalStyle`
         display: block;
     }
 
-    body {
-        font-family: 'Poppins', sans-serif;
-        background: white;
-        width: 100%;
-    }
-
     a svg {
         display: block;
     }
-    @media (prefers-color-scheme: dark) {
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: black;
-            width: 100%;
-        }
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
+
 `;

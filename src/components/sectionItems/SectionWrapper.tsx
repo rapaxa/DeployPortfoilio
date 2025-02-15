@@ -3,7 +3,6 @@ import {ContainerPropsType} from "../../types/container.ts";
 
 
 export const SectionsWrapper = styled.section<ContainerPropsType>`
-    min-height: ${(props) => props.height || "100vh"};
     display: flex;
     width: 100%;
     flex-direction: ${(props) => props.direction || 'column'};

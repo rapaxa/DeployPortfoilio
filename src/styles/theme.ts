@@ -6,6 +6,7 @@ export const theme = {
             weight:"700",
             height:"52px",
             align:"left",
+            spacing:"-0.4px",
             color:"#42446E"
         },
         description:{

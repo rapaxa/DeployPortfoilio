@@ -30,6 +30,7 @@ export const SocialList = () => {
 const SocialListStyled = styled.ul<SocialListProps>`
     display: ${(props) => props.display || "flex"};
     gap: 1.25rem;
+    padding-right: 9px;
     list-style: none;
     margin: 0;
 `;
