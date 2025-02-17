@@ -1,5 +1,5 @@
 import {ListOfItems} from "../../../../components/ListOfItems.tsx";
-import {SectionTitles} from "../../../../components/sectionItems/SectionTitles.tsx";
+import {SectionSubTitle} from "../../../../components/sectionItems/SectionSubTitle.tsx";
 
 const jobData = [
     {
@@ -28,7 +28,7 @@ const jobData = [
 export const WorkExperience = () => {
     return (
         <>
-            <SectionTitles>Work Experience</SectionTitles>
+            <SectionSubTitle>Work Experience</SectionSubTitle>
             <ListOfItems data={jobData}/>
         </>
 

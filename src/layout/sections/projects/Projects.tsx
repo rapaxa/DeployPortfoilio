@@ -3,7 +3,6 @@ import {SectionTitles} from "../../../components/sectionItems/SectionTitles.tsx"
 import {SectionSpan} from "../../../components/sectionItems/SectionSpan.tsx";
 import {FlexWrapperStyled} from "../../../components/FlexWrapper.tsx";
 import {Icon} from "../../../components/icons/Icon.tsx";
-import {Container} from "../../../components/Container.tsx";
 import {dataItems} from "./projectsData.ts";
 import {
     Card,
@@ -17,8 +16,7 @@ import {
 
 export const Projects = () => {
     return (
-        <SectionsWrapper>
-            <Container direction="column">
+        <SectionsWrapper direction={"column"}>
                 <SectionTitles>Projects</SectionTitles>
                 <SectionSpan>Things I’ve built so far</SectionSpan>
                 <StyledListItems>
@@ -44,8 +42,6 @@ export const Projects = () => {
                         </StyledListItem>
                     ))}
                 </StyledListItems>
-            </Container>
-
         </SectionsWrapper>
     );
 };

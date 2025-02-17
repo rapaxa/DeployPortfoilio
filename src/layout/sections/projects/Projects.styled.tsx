@@ -13,12 +13,12 @@ export const Card = styled.div`
 `;
 
 export const StyledListItems = styled.ul`
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin-top: 20vh;
+    display: grid;
+    justify-items: center;
+    margin-top: 110px;  
+    grid-template-columns: repeat(auto-fit,minmax(375px, 1fr));
+    column-gap:34px;
+    row-gap:28px;
     @media ${theme.media.tablet} {
         display: flex;
         justify-content: space-around;
@@ -33,10 +33,10 @@ export const StyledListItemImg = styled.img`
 `;
 
 export const StyledListItem = styled.li`
-    max-width: 375px ;// 375px -> 23.4375rem
+    max-width: 375px ;
+    width: 100%;// 375px -> 23.4375rem
     min-height: 570px; // 570px -> 35.625rem
     background-color: #FFFFFF;
-    margin-bottom: 3.875rem; // 62px -> 3.875rem
     border-radius: 1.25rem; // 20px -> 1.25rem
     position: relative;
     @media (prefers-color-scheme: light) {

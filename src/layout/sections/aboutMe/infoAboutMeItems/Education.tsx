@@ -1,12 +1,12 @@
 import {ListOfItems} from "../../../../components/ListOfItems.tsx";
-import {SectionTitles} from "../../../../components/sectionItems/SectionTitles.tsx";
 import {educationData} from "./educationData.ts";
+import {SectionSubTitle} from "../../../../components/sectionItems/SectionSubTitle.tsx";
 
 
 export const Education = () => {
     return (
         <>
-            <SectionTitles >Education</SectionTitles>
+            <SectionSubTitle >Education</SectionSubTitle>
             <ListOfItems data={educationData}/>
         </>
 

@@ -2,10 +2,10 @@ export const theme = {
     fonts:{
         title:{
             family:"'Poppins', sans-serif",
-            size:"42px",
+            size:"48px",
             weight:"700",
             height:"52px",
-            align:"left",
+            align:"center",
             spacing:"-0.4px",
             color:"#42446E"
         },

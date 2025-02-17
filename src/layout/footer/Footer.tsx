@@ -1,15 +1,15 @@
 import {StyledSpan} from "../../components/StyledSpan.tsx";
-import {SectionsWrapper} from "../../components/sectionItems/SectionWrapper.tsx";
 import {FlexWrapperStyled} from "../../components/FlexWrapper.tsx";
 import {SocialList} from "../../components/menu/SocialList.tsx";
 import {Icon} from "../../components/icons/Icon.tsx";
 import {Container} from "../../components/Container.tsx";
 import {ContactsItems, FooterMenu, FooterText, StyledFooterContactsContainer, StyledTitle} from "./Footer.styled.ts";
 import {Menu} from "../../components/menu/Menu.tsx";
+import styled from "styled-components";
 
 export const Footer = () => {
     return (
-        <SectionsWrapper as = "footer"  direction="row" >
+        <FooterWrapper>
             <Container direction="column" $justify="space-around">
                 <FlexWrapperStyled $justifyC={"center"}>
                     <StyledTitle>For any questions please mail me:<br/>
@@ -36,7 +36,10 @@ export const Footer = () => {
                 </FooterMenu>
             </Container>
 
-        </SectionsWrapper>
+        </FooterWrapper>
     );
 };
+const FooterWrapper = styled.footer`
+    margin-top: 156px;
+`
 //

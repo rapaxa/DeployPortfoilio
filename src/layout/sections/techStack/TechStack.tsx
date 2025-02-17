@@ -3,6 +3,7 @@ import {SectionSpan} from "../../../components/sectionItems/SectionSpan.tsx";
 import {dataItems} from "./techStackData.ts";
 import styled from "styled-components";
 import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
+import {SectionTitles} from "../../../components/sectionItems/SectionTitles.tsx";
 
 
 
@@ -12,7 +13,7 @@ export const TechStack = () => {
         <>
             <SectionsWrapper $justify={"space-between"} direction={"column"}>
                 <TitleWrapper>
-                    <h3>My Tech Stack</h3>
+                    <SectionTitles>My Tech Stack</SectionTitles>
                     <SectionSpan> Technologies I’ve been working with recently</SectionSpan>
                 </TitleWrapper>
                 <TechStackItems dataItems={dataItems}/>

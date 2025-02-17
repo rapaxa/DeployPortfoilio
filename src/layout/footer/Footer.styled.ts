@@ -29,6 +29,7 @@ export const ContactsItems = styled.ul`
 `
 export const StyledFooterContactsContainer = styled.div`
     border-bottom: rgba(102, 102, 102, 0.3) 2px solid;
+    margin-top: 200px;
     display: flex;
     width: 100%;
     justify-content: space-between;
