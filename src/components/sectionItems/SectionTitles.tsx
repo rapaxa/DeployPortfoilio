@@ -10,8 +10,13 @@ export const SectionTitles = styled.h2<SectionTitleProps>`
     line-height: ${theme.fonts.title.height};
     text-align: ${theme.fonts.title.align};
     color: ${theme.fonts.title.color};
-    padding: 37px 0;
     letter-spacing: ${theme.fonts.title.spacing};
+    &:first-of-type {
+        margin-bottom: 38px; 
+    }
+    &:not(:first-of-type){
+        margin: 38px 0;
+    }
     @media ${theme.media.tablet} {
         text-align: center;
     }

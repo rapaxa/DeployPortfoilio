@@ -3,11 +3,12 @@ import {StyledSpan} from "../../../components/StyledSpan.tsx";
 import {Photo, PhotoBorder, Square} from "./Main.styled.ts";
 import React from "react";
 import styled from "styled-components";
+import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
 
 
 export const MainSection:React.FC = () => {
     return (
-        <MainSectionWrapper>
+        <SectionsWrapper $justify={"space-between"} $alightItems={"center"}>
             <MainTextWrapper>
                 <MainTitle >Hi 👋,<br/>My name is<br/>
                     <StyledSpan>Pavlo MG</StyledSpan>
@@ -22,18 +23,13 @@ export const MainSection:React.FC = () => {
                     <Square $rotation={90}/>
                     <Photo src={photo} alt=""/>
                 </PhotoBorder>
-        </MainSectionWrapper>
+        </SectionsWrapper>
     )
 }
 
-const MainSectionWrapper = styled.section`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-`
 const MainTextWrapper = styled.div`
-    padding-top: 30px;
+    margin-top: 45px;
+    margin-bottom: 8px;
 `
 const MainTitle = styled.h1`
     font-family: "Poppins",sans-serif;

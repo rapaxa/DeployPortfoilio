@@ -4,12 +4,13 @@ import {FlexWrapperStyled} from "../../../components/FlexWrapper.tsx";
 import {SectionTitles} from "../../../components/sectionItems/SectionTitles.tsx";
 import {SectionText} from "../../../components/sectionItems/SectionText.tsx";
 import styled from "styled-components";
+import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
 
 export const InfoAboutMe = () => {
     return (
-            <InfoAboutMeSection>
+            <SectionsWrapper>
                 <FlexWrapperStyled $flexD={"column"} $justifyC={"space-between"}>
-                    <SectionTitles >{"About Me"}</SectionTitles>
+                    <SectionTitles >About Me</SectionTitles>
                     <TextWrapper>
                         <SectionText>{"The Generator App is an online tool that helps you " +
                             "to export ready-made templates ready to work as your future website" +
@@ -19,16 +20,13 @@ export const InfoAboutMe = () => {
                     <WorkExperience/>
                     <Education/>
                 </FlexWrapperStyled>
-            </InfoAboutMeSection>
+            </SectionsWrapper>
 
 
     )
 }
-const InfoAboutMeSection = styled.section`
-    padding-top: 165px;
-`
+
 const TextWrapper = styled.div`
     max-width: 59%;
-    
     width: 100%;
 `

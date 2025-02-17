@@ -1,28 +1,28 @@
 export const dataItems = [
     {
         name: "html",
-        width: "92",
-        height: "105",
-        viewBox: "0 0 92 105",
+        width: "120",
+        height: "120",
+        viewBox: "0 0 120 120",
     },
     {
         name: "css",
-        width: "92",
-        height: "105",
-        viewBox: "0 0 92 105",
+        width: "120",
+        height: "120",
+        viewBox: "0 0 120 120",
     },
     {
         name: "js",
-        width: "105",
-        height: "105",
-        viewBox: "0 0 105 105",
+        width: "120",
+        height: "120",
+        viewBox: "0 0 120 120",
     }
     ,
     {
         name: "react",
-        width: "110",
-        height: "100",
-        viewBox: "0 0 110 100",
+        width: "113",
+        height: "101",
+        viewBox: "0 0 113 101",
     },
     {
         name: "redux",
@@ -69,9 +69,9 @@ export const dataItems = [
     },
     {
         name: "gitHub",
-        width: "92",
-        height: "105",
-        viewBox: "0 0 85 85",
+        width: "88",
+        height: "88",
+        viewBox: "0 0 88 88",
     },
 
 

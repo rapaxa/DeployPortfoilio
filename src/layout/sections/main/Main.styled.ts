@@ -9,7 +9,7 @@ export const Photo = styled.img`
     border-radius: 50%;
     object-fit: cover;
     background: ${({theme}) => theme.gradient.photoGradient};
-    padding: 0.625rem;
+    padding: 9px;
     z-index: 1;
 
 `

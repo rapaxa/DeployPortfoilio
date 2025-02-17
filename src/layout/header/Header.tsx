@@ -26,6 +26,6 @@ const HeaderWrapper = styled.header`
     z-index: 1000;
     overflow: hidden;
     width: 100%;
-    height: 59px;
+    min-height: 59px;
 `;
 
