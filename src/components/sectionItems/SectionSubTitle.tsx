@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../styles/theme.ts";
 
 export const SectionSubTitle = styled.h3`
     font-family: "Poppins",sans-serif;
@@ -12,6 +13,9 @@ export const SectionSubTitle = styled.h3`
     }
     &:not(:first-of-type){
         margin: 38px 0;
+    }
+    @media ${theme.media.tablet} {
+        text-align: center;
     }
 
 `

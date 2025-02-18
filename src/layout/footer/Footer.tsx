@@ -3,22 +3,22 @@ import {FlexWrapperStyled} from "../../components/FlexWrapper.tsx";
 import {SocialList} from "../../components/menu/SocialList.tsx";
 import {Icon} from "../../components/icons/Icon.tsx";
 import {Container} from "../../components/Container.tsx";
-import {ContactsItems, FooterMenu, FooterText, StyledFooterContactsContainer, StyledTitle} from "./Footer.styled.ts";
+import {ContactsItems, FooterMenu, FooterText, StyledFooterContactsContainer} from "./Footer.styled.ts";
 import {Menu} from "../../components/menu/Menu.tsx";
 import styled from "styled-components";
+import {theme} from "../../styles/theme.ts";
 
 export const Footer = () => {
     return (
         <FooterWrapper>
             <Container direction="column" $justify="space-around">
-                <FlexWrapperStyled $justifyC={"center"}>
-                    <StyledTitle>For any questions please mail me:<br/>
-                        <StyledSpan>hi@pavanmg.in</StyledSpan>
-                    </StyledTitle>
+                <FlexWrapperStyled $flexD={"column"} $alignI={"center"}>
+                    <FooterTitle>For any questions please mail me: <StyledSpan>hi@pavanmg.in</StyledSpan></FooterTitle>
+
                 </FlexWrapperStyled>
                 <StyledFooterContactsContainer>
                     <a href="">
-                        <Icon  iconId={"logoFooterSvg"} width={"97"} height={"58"} viewBox={"0 0 97 58"}/>
+                        <Icon iconId={"logoFooterSvg"} width={"97"} height={"58"} viewBox={"0 0 97 58"}/>
                     </a>
                     <ContactsItems>
                         <li>+91 12345 09876</li>
@@ -40,6 +40,19 @@ export const Footer = () => {
     );
 };
 const FooterWrapper = styled.footer`
-    margin-top: 156px;
+    margin-top: 184px;
 `
 //
+const FooterTitle = styled.h2`
+    font-family: "DM Sans",sans-serif;
+    color: #1E0E62;
+    font-weight: 700;
+    font-size: 3.625rem;
+    line-height: 76px;
+    letter-spacing: -1px;
+    text-align: center;
+    @media ${theme.media.mobile} {
+        font-size: 1.625rem;
+    }
+
+`

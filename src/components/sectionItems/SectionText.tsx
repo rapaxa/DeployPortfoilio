@@ -9,7 +9,9 @@ export const SectionText = styled.p`
           color: ${color || '#42446E'};
           line-height: ${height};
            @media ${theme.media.tablet} {
-          text-align: center;}
+           width: 100%;
+          text-align: center;
+          }
         `
     }}
 `

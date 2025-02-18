@@ -5,6 +5,7 @@ import {SectionText} from "../../../components/sectionItems/SectionText.tsx";
 import styled from "styled-components";
 import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
 import {SectionSubTitle} from "../../../components/sectionItems/SectionSubTitle.tsx";
+import {theme} from "../../../styles/theme.ts";
 
 export const InfoAboutMe = () => {
     return (
@@ -29,5 +30,13 @@ export const InfoAboutMe = () => {
 const TextWrapper = styled.div`
     max-width: 59%;
     width: 100%;
+    @media ${theme.media.tablet} {
+        max-width: 100%;
+        width: 100%;
+    }
+    @media ${theme.media.mobile} {
+        max-width: 100%;
+        width: 100%;
+    }
 `
 

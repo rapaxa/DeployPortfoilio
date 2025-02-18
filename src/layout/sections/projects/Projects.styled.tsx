@@ -18,10 +18,9 @@ export const StyledListItems = styled.ul`
     margin-top: 110px;  
     grid-template-columns: repeat(auto-fit,minmax(375px, 1fr));
     column-gap:34px;
-    row-gap:28px;
-    @media ${theme.media.tablet} {
-        display: flex;
-        justify-content: space-around;
+    row-gap:62px;
+    @media ${theme.media.mobile} {
+        grid-template-columns: repeat(auto-fit,minmax(175px, 1fr));
 
     }
 `;

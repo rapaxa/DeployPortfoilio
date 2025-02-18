@@ -1,7 +1,6 @@
 import styled, {css} from "styled-components";
 import {Menu} from "../Menu.tsx";
 import {useState} from "react";
-import {theme} from "../../../styles/theme.ts";
 import {SocialList} from "../SocialList.tsx";
 
 export const MobileMenu = () => {
@@ -24,10 +23,8 @@ export const MobileMenu = () => {
 };
 
 const StyledMobileMenu = styled.nav`
-    display: none;
-    @media ${theme.media.tablet} {
-        display: block;
-    }
+    display: block;
+    
 `;
 const MobileMenuPopup = styled.div<{ $isOpen: boolean }>`
     position: fixed;

@@ -23,7 +23,8 @@ export const theme = {
         squareGradient: 'linear-gradient(-180deg, #16161621 10% , #FFFFFF 40%) 1'
     },
     media:{
-        tablet:"screen and (max-width:768px)",
-        mobile:"screen and (max-width:576px)",
+        mobile:"screen and (max-width:768px)",
+        tablet:"screen and (min-width: 768px) and (max-width: 1023px)",
+
     }
 }

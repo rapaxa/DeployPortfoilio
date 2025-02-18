@@ -6,6 +6,7 @@ export const Photo = styled.img`
     max-width: 350px;
     max-height: 350px;
     width: 100%;
+    
     border-radius: 50%;
     object-fit: cover;
     background: ${({theme}) => theme.gradient.photoGradient};
@@ -23,6 +24,9 @@ export const PhotoBorder = styled.div`
     position: relative;
     left: -14px;
     top: 14px;
+    @media ${theme.media.mobile} {
+      
+    }
 `
 
 export const Square = styled.div<SquareProps>`
@@ -38,7 +42,4 @@ export const Square = styled.div<SquareProps>`
     border-image: ${({theme}) => theme.gradient.squareGradient} 1; 
     box-sizing: border-box;
     filter: blur(2px);
-    @media ${theme.media.tablet} {
-        display: none;
-    }
 `;
