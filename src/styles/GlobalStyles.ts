@@ -1,7 +1,12 @@
 import { createGlobalStyle } from "styled-components";
+import {theme} from "./theme.ts";
 
 export const GlobalStyles = createGlobalStyle`
-    
+    html{
+        font-family: "DM Sans", serif;
+        font-size: 16px;
+    }
+   
     * {
         padding: 0;
         margin: 0;
@@ -46,6 +51,12 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+       
+    }
+    @media ${theme.media.mobile} {
+        html {
+            font-size: 10px;
+        }
     }
 
 `;

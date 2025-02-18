@@ -10,11 +10,14 @@ export const SectionsWrapper = styled.section<ContainerPropsType>`
     justify-content: ${(props) => props.$justify};
     flex-wrap: ${(props) => props.wrap || "no-wrap"};
     align-items: ${(props) => props.$alightItems};
-    margin-top: 200px;
+    margin-top: 12.5rem; /* 200px -> rem */
+
     @media ${theme.media.mobile} {
         flex-direction: column;
         text-align: center;
-        padding: 0 20px;
+        margin-top: 6.25rem; /* 100px -> rem */
+        padding: 0 1.25rem; /* 20px -> rem */
         display: flex;
     }
 `
+

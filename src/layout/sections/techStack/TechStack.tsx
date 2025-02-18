@@ -28,16 +28,17 @@ const TitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    h3{
+
+    h3 {
         width: 100%;
-        margin-bottom: 49px!important;
-        font-family: "Poppins",sans-serif;
+        margin-bottom: 3.0625rem !important; /* 49px -> 3.0625rem */
+        font-family: "Poppins", sans-serif;
         font-weight: 700;
-        font-size: 48px;
-        line-height: 26px;
+        font-size: 3rem; /* 48px -> 3rem */
+        line-height: 1.625rem; /* 26px -> 1.625rem */
         letter-spacing: 0;
         text-align: center;
         color: #42446E;
     }
-`
+`;
 

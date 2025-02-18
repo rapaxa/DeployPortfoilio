@@ -1,4 +1,4 @@
-import {ListOfItems} from "../../../../components/ListOfItems.tsx";
+import {ListOfItems} from "../../../../components/listOfItems/ListOfItems.tsx";
 import {educationData} from "./educationData.ts";
 import {SectionSubTitle} from "../../../../components/sectionItems/SectionSubTitle.tsx";
 

@@ -1,7 +1,7 @@
 import {FlexWrapperStyled} from "../../../../components/FlexWrapper.tsx";
 import {Icon} from "../../../../components/icons/Icon.tsx";
 import {TechStackItemPropsType} from "../../../../types/techStack.ts";
-import {StyledTechStackItem, StyledTechStackItems} from "./TechStackItems.styled.tsx";
+import {StyledTechStackItem, StyledTechStackItems} from "./TechStackItemsStyles.ts";
 
 
 export const TechStackItems = ({dataItems}: { dataItems: TechStackItemPropsType[] }) => {

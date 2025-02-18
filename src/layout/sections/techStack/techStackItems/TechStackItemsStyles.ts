@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {theme} from "../../../../styles/theme.ts";
 
-export const StyledTechStackItems = styled.ul`
+ const StyledTechStackItems = styled.ul`
     display: grid;
     width: 100%;
     margin-top: 122px;
@@ -15,6 +15,10 @@ export const StyledTechStackItems = styled.ul`
         gap: 40px;
     }
 `
-export const StyledTechStackItem = styled.li`
+const StyledTechStackItem = styled.li`
     
 `
+export {
+     StyledTechStackItems,
+    StyledTechStackItem
+}

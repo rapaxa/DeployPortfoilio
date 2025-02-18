@@ -1,8 +1,7 @@
 import photo from "../../../assets/images/Photo.webp";
 import {StyledSpan} from "../../../components/StyledSpan.tsx";
-import {Photo, PhotoBorder, Square} from "./Main.styled.ts";
+import {Photo, PhotoBorder, Square,MainTitle,MainTextWrapper} from "./MainStyles.ts";
 import React from "react";
-import styled from "styled-components";
 import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
 
 
@@ -27,16 +26,4 @@ export const MainSection:React.FC = () => {
     )
 }
 
-const MainTextWrapper = styled.div`
-    margin-top: 45px;
-    margin-bottom: 8px;
-`
-const MainTitle = styled.h1`
-    font-family: "Poppins",sans-serif;
-    color: #42446E;
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 70px;
-    letter-spacing: -1px;
 
-`
