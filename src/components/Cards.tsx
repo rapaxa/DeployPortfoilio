@@ -4,7 +4,7 @@ import {
     StyledListItemImg,
     StyledNote,
     StyledTitle
-} from "./sectionItems/CardsStyles.ts";
+} from "./CardsStyles.ts";
 import {FlexWrapperStyled} from "./FlexWrapper.tsx";
 import {Icon} from "./icons/Icon.tsx";
 import {projectsDataItemsType} from "../types/listOfItmes.ts";

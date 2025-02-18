@@ -1,4 +1,4 @@
-import {MenuItem,MenuList,MenuLink} from "./MenuStyles.tsx";
+import {MenuItem,MenuList,MenuLink} from "./MenuStyles.ts";
 
 
 export const Menu = () => {

@@ -13,6 +13,8 @@ import {theme} from "../../../../styles/theme.ts";
     padding: 0;
     @media ${theme.media.mobile} {
         gap: 40px;
+        margin-top: 50px;
+        
     }
 `
 const StyledTechStackItem = styled.li`
