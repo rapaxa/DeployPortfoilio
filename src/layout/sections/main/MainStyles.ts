@@ -13,6 +13,7 @@ const MainTitle = styled.h1`
     font-size: 3.625rem; /* 58px -> 3.625rem */
     line-height: 4.375rem; /* 70px -> 4.375rem */
     letter-spacing: -0.0625rem; /* -1px -> -0.0625rem */
+    
 `;
 const Photo = styled.img`
     max-width: 21.875rem; /* 350px -> 21.875rem */

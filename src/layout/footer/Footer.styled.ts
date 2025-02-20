@@ -1,22 +1,7 @@
 import styled from "styled-components";
 import {theme} from "../../styles/theme.ts";
 
-export const StyledTitle = styled.h3`
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 3.625rem;
-    color: #1E0E62;
-    text-align: center;
-    @media ${theme.media.tablet} {
-        font-size: 2.625rem;
-        text-align: center;
-    }
-    @media (prefers-color-scheme: dark) {
-        color: #CCCCCC;
-    }
-    
 
-`
 export const ContactsItems = styled.ul`
     display: flex;
     align-items: center;
@@ -28,37 +13,41 @@ export const ContactsItems = styled.ul`
     
 `
 export const StyledFooterContactsContainer = styled.div`
-    position: relative;
-    margin-top: 200px;
-    margin-bottom: 45px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    &::before{
-        content: '';
-        position: absolute;
-        top:96px;
-        width: 100%;
-        border-bottom: rgba(102, 102, 102, 0.3) 2px solid;
-        
-    }
-    @media ${theme.media.tablet} {
+    padding-bottom: 40px;
+    border-bottom: rgba(102, 102, 102, 0.3) 2px solid;
+    @media ${theme.media.mobile} {
         display: flex;
         flex-direction: column;
+        padding-bottom: 1rem;
+        
     }
 `
 export const FooterMenu = styled.div`
     width: 100%;
     display: flex;
+    margin-top: 40px;
     justify-content: space-between;
-    @media ${theme.media.tablet} {
-        display: flex;
-        flex-direction: column;
-    }
+   @media ${theme.media.mobile} {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 1rem;
+       p{
+           margin-top: 1rem;
+       }
+   }
 `
 
 export const FooterText = styled.p`
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-align: center;
+
     @media (prefers-color-scheme: dark) {
         color: #CCCCCC;
     }

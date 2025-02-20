@@ -5,6 +5,7 @@ import {InfoAboutMe} from "../sections/aboutMe/InfoAboutMe.tsx";
 import {TechStack} from "../sections/techStack/TechStack.tsx";
 import {Projects} from "../sections/projects/Projects.tsx";
 import {theme} from "../../styles/theme.ts";
+import {Contact} from "../sections/contact/Contact.tsx";
 
 export const Main: React.FC = () => {
     return (
@@ -13,6 +14,7 @@ export const Main: React.FC = () => {
             <InfoAboutMe/>
             <TechStack/>
             <Projects/>
+            <Contact/>
         </MainStyled>
     );
 };
