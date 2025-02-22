@@ -4,17 +4,23 @@ import {StyledSpan} from "../../../components/StyledSpan.tsx";
 import styled from "styled-components";
 import {theme} from "../../../styles/theme.ts";
 
-export const Contact = () =>{
+export const Contact = () => {
     return (
-        <SectionsWrapper>
+        <SectionsWrapper id = "contact">
             <FlexWrapperStyled $flexD={"column"} $alignI={"center"}>
-                <ContactTitle >For any questions please mail me: <StyledSpan>hi@pavanmg.in</StyledSpan></ContactTitle>
+                <ContactTitle>For any questions please mail me:
+                    <LinkEmail as="a"
+                               href={`mailto:{rapaxa123@gmail.com}`}>rapaxa123@gmail.com</LinkEmail>
+                </ContactTitle>
             </FlexWrapperStyled>
         </SectionsWrapper>
     )
 }
+const LinkEmail = styled(StyledSpan)`{
+    
+}`
 const ContactTitle = styled.h2`
-    font-family: "DM Sans",sans-serif;
+    font-family: "DM Sans", sans-serif;
     color: #1E0E62;
     font-weight: 700;
     font-size: 3.625rem; /* 58px -> 3.625rem */
@@ -22,7 +28,7 @@ const ContactTitle = styled.h2`
     letter-spacing: -0.0625rem; /* -1px -> -0.0625rem */
     text-align: center;
     @media ${theme.media.mobile} {
-        font-size: 1.625rem; 
-       
+        font-size: 1.625rem;
+
     }
 `;

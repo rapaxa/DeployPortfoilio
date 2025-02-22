@@ -11,7 +11,7 @@ import {SectionTitles} from "../../../components/sectionItems/SectionTitles.tsx"
 export const TechStack = () => {
     return (
         <>
-            <SectionsWrapper $justify={"space-between"} direction={"column"}>
+            <SectionsWrapper id = "tech" $justify={"space-between"} direction={"column"}>
                 <TitleWrapper>
                     <SectionTitles>My Tech Stack</SectionTitles>
                     <SectionSpan> Technologies I’ve been working with recently</SectionSpan>

@@ -9,7 +9,7 @@ import {theme} from "../../../styles/theme.ts";
 
 export const InfoAboutMe = () => {
     return (
-            <SectionsWrapper>
+            <SectionsWrapper id={"about"}>
                 <FlexWrapperStyled $flexD={"column"} $justifyC={"space-between"}>
                     <SectionSubTitle >About Me</SectionSubTitle>
                     <TextWrapper>

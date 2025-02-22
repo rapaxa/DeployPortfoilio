@@ -20,10 +20,15 @@ export const theme = {
     gradient: {
         nameGradient: 'linear-gradient(13deg, rgba(19, 176, 245, 1), rgba(231, 15, 170, 1) )',
         photoGradient: 'linear-gradient(180deg, #e70faa 20%, #00c0fd 90%)',
-        squareGradient: 'linear-gradient(-180deg, #16161621 10%, #FFFFFF 40%) 1'
+        squareGradient: 'linear-gradient(-180deg, #16161621 10%, #FFFFFF 40%) 1',
     },
     media: {
         mobile: "screen and (max-width:768px)", // 768px -> 48rem
         tablet: "screen and (min-width: 768) and (max-width: 1023rem)", // 768px -> 48rem, 1023px -> 64.4375rem
+    },
+    gradientAnimation: {
+        angle: 180, // Стартовый угол
+        startAngle: 180,
+        endAngle: 200 // Меняем от 180 до 360 градусов
     }
 };

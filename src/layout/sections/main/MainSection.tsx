@@ -3,15 +3,23 @@ import {StyledSpan} from "../../../components/StyledSpan.tsx";
 import {Photo, PhotoBorder, Square,MainTitle,MainTextWrapper} from "./MainStyles.ts";
 import React from "react";
 import {SectionsWrapper} from "../../../components/sectionItems/SectionWrapper.tsx";
-
+import Typewriter from 'typewriter-effect';
 
 export const MainSection:React.FC = () => {
     return (
-        <SectionsWrapper $justify={"space-between"} $alightItems={"center"}>
+        <SectionsWrapper id = "home" $justify={"space-between"} $alightItems={"center"}>
             <MainTextWrapper>
-                <MainTitle >Hi 👋,<br/>My name is<br/>
+
+                <MainTitle  >Hi 👋,<br/>My name is<br/>
                     <StyledSpan>Pavlo MG</StyledSpan>
-                    <br/>I'm web developer
+                    <Typewriter
+                        options={{
+                            strings: ['I\'m web developer','...'],
+                            autoStart: true,
+                            loop: true,
+                            deleteSpeed:false
+                        }}
+                    />
                 </MainTitle>
             </MainTextWrapper>
                 <PhotoBorder>

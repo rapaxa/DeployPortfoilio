@@ -11,7 +11,7 @@ export const SectionsWrapper = styled.section<ContainerPropsType>`
     flex-wrap: ${(props) => props.wrap || "no-wrap"};
     align-items: ${(props) => props.$alightItems};
     margin-top: 12.5rem; /* 200px -> rem */
-
+    border: red 2px solid;
     @media ${theme.media.mobile} {
         flex-direction: column;
         text-align: center;

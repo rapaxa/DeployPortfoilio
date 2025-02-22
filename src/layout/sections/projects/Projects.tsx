@@ -10,7 +10,7 @@ import {Cards} from "../../../components/Cards.tsx";
 
 export const Projects = () => {
     return (
-        <SectionsWrapper direction={"column"}>
+        <SectionsWrapper id = "projects" direction={"column"}>
                 <SectionTitles>Projects</SectionTitles>
                 <SectionSpan>Things I’ve built so far</SectionSpan>
                 <StyledListItems>

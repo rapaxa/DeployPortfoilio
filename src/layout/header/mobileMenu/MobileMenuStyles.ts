@@ -27,7 +27,7 @@ const MobileMenuPopup = styled.div<{ $isOpen: boolean }>`
     ul {
         padding-top: 30%;
         width: 100%;
-        height: 50%;
+        
         display: flex;
         flex-direction: column;
 

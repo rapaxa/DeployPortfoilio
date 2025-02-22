@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css, keyframes} from "styled-components";
 import { SquareProps } from "../../../types/styles/abstract/square.ts";
 import { theme } from "../../../styles/theme.ts";
 const MainTextWrapper = styled.div`
@@ -15,16 +15,32 @@ const MainTitle = styled.h1`
     letter-spacing: -0.0625rem; /* -1px -> -0.0625rem */
     
 `;
+const generateKeyframes = () => {
+    let keyframesStr = "";
+
+    for (let i = 0; i <= 100; i += 1) { // шаг 10 для оптимизации
+        keyframesStr += `
+      ${i}% {
+        background: linear-gradient(1${i + 100}deg, #e70faa 20%, #00c0fd 90%);
+      }
+      
+    `;
+    }
+
+    return keyframesStr;
+};
+const gradientAnimation = keyframes`${css`${generateKeyframes()}`}`;
+
 const Photo = styled.img`
     max-width: 21.875rem; /* 350px -> 21.875rem */
     max-height: 21.875rem; /* 350px -> 21.875rem */
     width: 100%;
-
     border-radius: 50%;
     object-fit: cover;
     background: ${({ theme }) => theme.gradient.photoGradient};
     padding: 0.5625rem; /* 9px -> 0.5625rem */
     z-index: 1;
+    animation: ${gradientAnimation} 2s infinite alternate;
 `
  const PhotoBorder = styled.div`
     display: flex;

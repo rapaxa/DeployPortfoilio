@@ -43,7 +43,14 @@ export const GlobalStyles = createGlobalStyle`
     aside, nav, footer, header, section, main {
         display: block;
     }
-
+    a:focus, button:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    a {
+        user-select: none; /* Запрещает выделение текста */
+        cursor: pointer; /* Делаем курсор нормальным */
+    }
     a svg {
         display: block;
     }
