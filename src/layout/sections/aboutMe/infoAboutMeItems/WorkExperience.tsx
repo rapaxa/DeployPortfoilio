@@ -4,24 +4,17 @@ import {SectionSubTitle} from "../../../../components/sectionItems/SectionSubTit
 const jobData = [
     {
         title: "Junior Web Developer",
-        company: "Dr. Rajkumar’s Learning App",
-        location: "Bengaluru",
-        dates: "Sep 2021 - Dec 2021",
+        company: "PET projects",
+        location: "UK",
+        dates: "Nov 2024 - present",
+        type: "Internship"
+    },
+    {
+        title: "Skilled Operative",
+        company: "Associated Sea Foods",
+        location: "UK, Scotland, Buckie",
+        dates: "Mar 2023 - present",
         type: "Full Time"
-    },
-    {
-        title: "Web Development Intern",
-        company: "IonPixelz Web Solutions",
-        location: "Bengaluru",
-        dates: "Sep 2021 - Dec 2021",
-        type: "Internship"
-    },
-    {
-        title: "SEO / SEM Specialist",
-        company: "HAAPS",
-        location: "Bengaluru",
-        dates: "Sep 2021 - Dec 2021",
-        type: "Internship"
     }
 ];
 

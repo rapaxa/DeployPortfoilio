@@ -13,10 +13,11 @@ export const InfoAboutMe = () => {
                 <FlexWrapperStyled $flexD={"column"} $justifyC={"space-between"}>
                     <SectionSubTitle >About Me</SectionSubTitle>
                     <TextWrapper>
-                        <SectionText>{"The Generator App is an online tool that helps you " +
-                            "to export ready-made templates ready to work as your future website" +
-                            ". It helps you to combine slides, panels and other components " +
-                            "and export it as a set of static files: HTML/CSS/JS."}</SectionText>
+                        <SectionText>{"I am a 27-year-old aspiring Front-End Developer from Eastern Europe, currently focused on improving my skills in React, TypeScript, and Redux. " +
+                            "I am passionate about programming and eager to build clean," +
+                            " user-friendly web applications.           " +
+                            " In my free time, I enjoy learning English, exploring new technologies, and thinking about starting my own business in Scotland. I am a motivated and curious person, always looking for ways to grow both personally and professionally."
+                        }</SectionText>
                     </TextWrapper>
                     <WorkExperience/>
                     <Education/>

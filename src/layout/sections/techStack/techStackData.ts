@@ -50,22 +50,10 @@ export const dataItems = [
         viewBox: "0 0 92 105",
     },
     {
-        name: "vsCode",
-        width: "92",
-        height: "105",
-        viewBox: "0 0 92 105",
-    },
-    {
         name: "tailwind",
         width: "115",
         height: "69",
         viewBox: "0 0 115 69",
-    },
-    {
-        name: "men",
-        width: "92",
-        height: "105",
-        viewBox: "0 0 92 105",
     },
     {
         name: "gitHub",

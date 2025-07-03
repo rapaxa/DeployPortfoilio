@@ -11,13 +11,13 @@ export const MainSection:React.FC = () => {
             <MainTextWrapper>
 
                 <MainTitle  >Hi 👋,<br/>My name is<br/>
-                    <StyledSpan>Pavlo MG</StyledSpan>
+                    <StyledSpan>Pavlo Volodchenko</StyledSpan>
                     <Typewriter
                         options={{
                             strings: ['I\'m web developer','...'],
                             autoStart: true,
                             loop: true,
-                            deleteSpeed:false
+                            deleteSpeed:"natural"
                         }}
                     />
                 </MainTitle>
